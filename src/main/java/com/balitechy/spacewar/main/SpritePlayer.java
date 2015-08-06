@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
-public class Player {
+public class SpritePlayer {
 	
 	private double x;
 	private double y;
@@ -18,7 +18,7 @@ public class Player {
 	private BufferedImage image;
 	private Game game;
 	
-	public Player(double x, double y, Game game){
+	public SpritePlayer(double x, double y, Game game){
 		this.x = x;
 		this.y = y;
 		this.game = game;

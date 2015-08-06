@@ -26,7 +26,7 @@ public class Game extends Canvas implements Runnable {
 	private SpritesImageLoader sprites;
 	
 	//Game components
-	private Player player;
+	private SpritePlayer player;
 	private BulletController bullets;
 	
         private BitmapBackgroundRenderer backgRenderer;
@@ -50,7 +50,7 @@ public class Game extends Canvas implements Runnable {
 		
 		
 		// Set player position at the bottom center.
-		player = new Player((WIDTH * SCALE - Player.WIDTH) / 2, HEIGHT * SCALE - 50 , this);
+		player = new SpritePlayer((WIDTH * SCALE - SpritePlayer.WIDTH) / 2, HEIGHT * SCALE - 50 , this);
 		bullets = new BulletController();
 		backgRenderer=new BitmapBackgroundRenderer();
 	}
